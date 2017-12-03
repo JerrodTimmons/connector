@@ -15,7 +15,5 @@ Route::get('/', function () {
 Route::get('/show', "Home@index");
 Route::post('/createmployee', "Employee@save_data");
 Route::get('/create', "Employee@showForm");
-
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');

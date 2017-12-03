@@ -1,9 +1,7 @@
 <?php
-
 namespace App\Http\Controllers;
 use App\Employees;
 use Illuminate\Http\Request;
-
 class Employee extends Controller
 {
     public function save_data(Request $request)
@@ -15,14 +13,10 @@ class Employee extends Controller
         $Employee->phone = $request->phone;
         $Employee->address = $request->address;
         $Employee->dob = $request->dob;
-
         $Employee->save();
-
         return view('welcome');
-
         
     }
-
     public function showForm()
     {
         return view('employee');
