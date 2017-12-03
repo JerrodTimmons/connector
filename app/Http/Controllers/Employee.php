@@ -1,18 +1,24 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Employees;
 use Illuminate\Http\Request;
 
 class Employee extends Controller
 {
     public function save_data(Request $request)
     {
-        $employee = new Employee;
-        $employee->name = $request->name;
-        $employee->save();
+        $Employee = new Employees;
+        $Employee->idEmployee = $request->idEmployee;
+        $Employee->fname = $request->first;
+        $Employee->lname = $request->last;
+        $Employee->phone = $request->phone;
+        $Employee->address = $request->address;
+        $Employee->dob = $request->dob;
 
-        return back();
+        $Employee->save();
+
+        return view('welcome');
 
         
     }
