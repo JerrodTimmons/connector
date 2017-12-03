@@ -14,7 +14,7 @@ class Employee extends Controller
         $Employee->address = $request->address;
         $Employee->dob = $request->dob;
         $Employee->save();
-        return view('welcome');
+        return view('employeesuccess');
         
     }
     public function showForm()

@@ -13,7 +13,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/show', "Home@index");
-Route::post('/createmployee', "Employee@save_data");
-Route::get('/create', "Employee@showForm");
+Route::post('/createemployee', "Employee@save_data");
+Route::get('/createemp', "Employee@showForm");
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
