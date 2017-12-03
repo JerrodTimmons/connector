@@ -12,7 +12,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/show', "Home@index");
 Route::post('/createmployee', "Employee@save_data");
 Route::get('/create', "Employee@showForm");
 
