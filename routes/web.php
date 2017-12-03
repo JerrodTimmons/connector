@@ -13,4 +13,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/createmployee', "Employee@save_data");
+Route::post('/createmployee', "Employee@save_data");
+Route::get('/create', "Employee@showForm");
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
