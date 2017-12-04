@@ -12,7 +12,9 @@
 Route::get('/', "Home@showhome");
 Route::get('/show', "Home@index");
 Route::post('/createemployee', "Employee@save_data");
+Route::get('/viewemployees', "Employee@list");
 Route::get('/createemp', "Employee@showForm");
 Route::get('/createcust', "Customer@showForm");
+Route::get('/viewcustomers', "Customer@list");
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

@@ -27,4 +27,8 @@ class Customer extends Controller
     {
         return view('customer');
     }
+    public function list ()
+    {
+        return view('viewcustomers');
+    }
 }

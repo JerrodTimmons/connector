@@ -7,12 +7,12 @@
     <p>
 
     </p>
-    <a href="/createemp" type="submit" class="btn btn-primary">View Employees</a>
+    <a href="/viewemployees" type="submit" class="btn btn-primary">View Employees</a>
     <a href="/createemp" type="submit" class="btn btn-primary">Create Employee</a>
     <p>
     
     </p>
-    <a href="/createemp" type="submit" class="btn btn-primary">View Customers</a>
+    <a href="/viewcustomers" type="submit" class="btn btn-primary">View Customers</a>
     <a href="/createcust" type="submit" class="btn btn-primary">Create Customer</a>
     <p>
     

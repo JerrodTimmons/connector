@@ -21,4 +21,8 @@ class Employee extends Controller
     {
         return view('employee');
     }
+    public function list ()
+    {
+        return view('viewemployees');
+    }
 }
