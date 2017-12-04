@@ -44,6 +44,7 @@
 
             </div>
             <button type="submit" class="btn btn-primary">Create Employee</button>
+            <a href="/" type="submit" class="btn btn-primary">Back</a>
             {{ csrf_field() }}
         </form>
     </div>

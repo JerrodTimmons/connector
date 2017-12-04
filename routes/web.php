@@ -12,6 +12,8 @@
 Route::get('/', "Home@showhome");
 Route::get('/show', "Home@index");
 Route::post('/createemployee', "Employee@save_data");
+Route::post('/createcustomer', "Customer@save_data");
+Route::post('/createitem', "Inventory@save_data");
 Route::get('/viewemployees', "Employee@list");
 Route::get('/createemp', "Employee@showForm");
 Route::get('/createcust', "Customer@showForm");

@@ -15,4 +15,7 @@ class Customers extends Model
         'idTransaction',
         'points',
     ];
+    /*
+    * @var array
+    */
 }

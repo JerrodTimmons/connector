@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Customers;
-use Log;
 use Illuminate\Http\Request;
-
 class Customer extends Controller
 {
     public function save_data(Request $request)
@@ -18,7 +16,7 @@ class Customer extends Controller
 
         $Customer->save();
 
-        return view('welcome');
+        return view('customersuccess');
 
         
     }
