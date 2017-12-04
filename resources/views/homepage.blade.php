@@ -21,8 +21,8 @@
     <p>
     
     </p>
-    <a href="/createemp" type="submit" class="btn btn-primary">View Inventory</a>
-    <a href="/createemp" type="submit" class="btn btn-primary">Add Item</a>
+    <a href="/listinventory" type="submit" class="btn btn-primary">View Inventory</a>
+    <a href="/createitem" type="submit" class="btn btn-primary">Add Item</a>
 
 
 

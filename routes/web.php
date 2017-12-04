@@ -16,5 +16,7 @@ Route::get('/viewemployees', "Employee@list");
 Route::get('/createemp', "Employee@showForm");
 Route::get('/createcust', "Customer@showForm");
 Route::get('/viewcustomers', "Customer@list");
+Route::get('/createitem', "Inventory@showForm");
+Route::get('/listinventory', "Inventory@list");
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
