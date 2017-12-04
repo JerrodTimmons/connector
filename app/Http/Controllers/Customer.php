@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Customers;
+use Log;
 use Illuminate\Http\Request;
 
 class Customer extends Controller
@@ -24,6 +25,6 @@ class Customer extends Controller
 
     public function showForm()
     {
-        return view('Customer');
+        return view('customer');
     }
 }

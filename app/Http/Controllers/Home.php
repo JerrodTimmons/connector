@@ -14,5 +14,10 @@ class Home extends Controller
 
         return view('home')->with('Employee', $Employee);
     }
+
+    public function showhome ()
+    {
+        return view('homepage');
+    }
     
 }

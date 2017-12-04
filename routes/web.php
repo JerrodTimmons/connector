@@ -9,11 +9,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', "Home@showhome");
 Route::get('/show', "Home@index");
 Route::post('/createemployee', "Employee@save_data");
 Route::get('/createemp', "Employee@showForm");
+Route::get('/createcust', "Customer@showForm");
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
